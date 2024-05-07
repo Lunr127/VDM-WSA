@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基于扩散模型的视频生成方法</title>
+    <style>
+        body {
+            font-family: 'SimSun', '宋体', serif; /* 设置默认字体为宋体 */
+        }
+        .title {
+            font-size: 28px; /* 二号字体大约对应28px */
+            font-weight: bold; /* 黑体字 */
+            text-align: center; /* 居中文本 */
+        }
+        .abstract {
+            font-size: 14px; /* 四号字体大约对应14px */
+            text-align: center; /* 居中文本 */
+            line-height: 1.5; /* 设置行距 */
+        }
+        .videos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; /* 平均分布每行的视频 */
+            padding: 20px;
+        }
+        .video {
+            width: 160px; /* 视频宽度 */
+            height: 90px; /* 视频高度 */
+            margin-bottom: 10px; /* 下边距 */
+            background-color: #eee; /* 背景颜色用于标识视频位置 */
+        }
+        video {
+            width: 100%; /* 全宽 */
+            height: 100%; /* 全高 */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">基于扩散模型的视频生成方法</h1>
+    <p class="abstract">这里是摘要内容，简短扼要地描述视频生成方法的核心概念和实验的目的。</p>
+
+    <div class="videos">
+        <!-- 第一行视频 -->
+        <div class="video">
+            <video controls>
+                <source src="video/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <!-- 添加其他视频，确保修改src属性中的文件名 -->
+        <div class="video">
+            <video controls>
+                <source src="video/video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <!-- 按需增加其他视频元素 -->
+    </div>
+</body>
+</html>
