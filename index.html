@@ -7,29 +7,18 @@
     <style>
        body {
             font-family: 'SimSun', '宋体', serif; /* 设置默认字体为宋体 */
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* 设置body的高度为视窗高度 */
         }
         .title {
             font-size: 28px; /* 二号字体大约对应28px */
             font-weight: bold; /* 黑体字 */
             text-align: center; /* 居中文本 */
         }
-        .abstract-container {
-            text-align: left;
-            width: 50%; /* 容器宽度为屏幕宽度的50% */
-            margin: auto;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* 添加轻微的阴影效果 */
-            border-radius: 10px; /* 边角圆滑 */
-        }
         .abstract {
             font-size: 14px; /* 四号字体大约对应14px */
-            line-height: 1.5;
+            text-align: left; /* 居中文本 */
+            line-height: 1.5; /* 设置行距 */
+            margin-right: 150px;
+            margin-left: 150px;
         }
         .videos {
             display: flex;
@@ -39,7 +28,7 @@
         }
         .video {
             width: 160px; /* 视频宽度 */
-            height: 160px; /* 视频高度 */
+            height: 90px; /* 视频高度 */
             margin-bottom: 10px; /* 下边距 */
             background-color: #eee; /* 背景颜色用于标识视频位置 */
         }
@@ -60,14 +49,14 @@
     <div class="videos">
         <!-- 第一行视频 -->
         <div class="video">
-            <video controls autoplay muted playsinline>
+            <video controls autoplay loop muted playsinline>
                 <source src="video/others/car-turn/ours.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
         <!-- 添加其他视频，确保修改src属性中的文件名 -->
         <div class="video">
-            <video controls autoplay muted playsinline>
+            <video controls autoplay loop muted playsinline>
                 <source src="video/others/dog-run/ours.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
