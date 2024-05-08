@@ -24,7 +24,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around; /* 平均分布每行的视频 */
-            padding: 20px;
+        
         }
         .video {
             width: 160px; /* 视频宽度 */
@@ -51,6 +51,7 @@
         <br>&emsp;&emsp;为了验证本方法的有效性，本文在经典的视频数据集上与代表性的视频生成方法开展对比实验，针对模型中的重要模块进行消融实验。实验结果从不同角度证明了本方法的优越性。
     </p>
 
+    <h2>&emsp;&emsp;对比实验</h2>
     <div class="videos">
         <!-- 第一行视频 -->
         <div class="video">
@@ -135,5 +136,79 @@
             </video>
         </div>
     </div>
+
+
+    <h2>&emsp;&emsp;消融实验</h2>
+    <div class="videos">
+        <div class="video">
+            <h3>Input</h3>
+            <video controls autoplay loop muted playsinline>
+                <source src="video/ablation/car-turn.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video">
+            <h3>w/o Attn</h3>
+            <video controls autoplay loop muted playsinline>
+                <source src="video/ablation/a jeep car is moving on the snow-attention.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video">
+            <h3>Full</h3>
+            <video controls autoplay loop muted playsinline>
+                <source src="video/ablation/a jeep car is moving on the snow.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <br><br><br>
+    <h2>&emsp;&emsp;参数分析实验</h2>
+    <div class="videos">
+        <div class="video">
+            <h3>Input</h3>
+            <video controls autoplay loop muted playsinline>
+                <source src="video/ablation/boat.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video">
+            <h3>3 × 2 × 2</h3>
+            <video controls autoplay loop muted playsinline>
+                <source src="video/ablation/boat-1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video">
+            <h3>3 × 4 × 4</h3>
+            <video controls autoplay loop muted playsinline>
+                <source src="video/ablation/boat-2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video">
+            <h3>5 × 4 × 4</h3>
+            <video controls autoplay loop muted playsinline>
+                <source src="video/ablation/boat-3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video">
+            <h3>5 × 8 × 8</h3>
+            <video controls autoplay loop muted playsinline>
+                <source src="video/ablation/boat-4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video">
+            <h3>5 × 16 × 16</h3>
+            <video controls autoplay loop muted playsinline>
+                <source src="video/ablation/boat-5.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    
 </body>
 </html>
